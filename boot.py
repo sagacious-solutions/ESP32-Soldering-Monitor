@@ -13,12 +13,17 @@ LCD_DISPLAY = python_lcd.I2cLcd(
     i2c=i2c, i2c_addr=LCD_ADDRESS_FROM_SCAN, num_lines=4, num_columns=20
 )
 
+for i in range(100):
+    LCD_DISPLAY.clear()
+    LCD_DISPLAY.putstr(f"Hello World : {i}")
+    time.sleep(1)
 
-for i in range(5):
-    LCD_DISPLAY.hal_backlight_off()
 
-    time.sleep(2.5)
+# for i in range(5):
+#     LCD_DISPLAY.hal_backlight_off()
 
-    LCD_DISPLAY.hal_backlight_on()
+#     time.sleep(2.5)
 
-    time.sleep(2.5)
+#     LCD_DISPLAY.hal_backlight_on()
+
+#     time.sleep(2.5)
