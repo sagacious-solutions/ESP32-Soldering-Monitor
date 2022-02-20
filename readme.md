@@ -7,9 +7,12 @@ This project is to provide an LCD temperature display for monitoring board and c
 ---
 ## Project Plan
 
-### Stage 1 
+### Stage 1 - Completed
 
 Get i2c LCD to display hello world
+
+<img src="./docs/stage1.gif" width="500px">
+
 
 ### Stage 2
 
